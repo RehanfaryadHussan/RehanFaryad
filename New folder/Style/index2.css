@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0%;
+    text-decoration: none;
+}
+.box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: black;
+    text-transform: uppercase;
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    transition: color .6s linear;
+    overflow: hidden;
+    margin: 20px;
+}
+a:hover{
+    color: #fff;
+}
+
+
+
+/* ===========      <a></a>  =   1   ==================== */
+
+a.ancar_1::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    transform: translateX(-100%);
+    transition: all .4s linear;
+}
+a.ancar_1:hover::before{
+    transform: translateX(0%);
+}
+
+/* ===========      <a></a>  =   2   ==================== */
+
+a.ancar_2::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    transform: translateY(-100%);
+    transition: all .4s linear;
+}
+a.ancar_2:hover::before{
+    transform: translateY(0%);
+}
+/* ===========      <a></a>  =   3   ==================== */
+
+a.ancar_3::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    transform: translateX(100%);
+    transition: all .4s linear;
+}
+a.ancar_3:hover::before{
+    transform: translateX(0);
+}
+/* ===========      <a></a>  =   4   ==================== */
+
+a.ancar_4::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: black;
+    transform: translateY(100%);
+    transition: all .4s linear;
+}
+a.ancar_4:hover::before{
+    transform: translateY(0);
+}
+
